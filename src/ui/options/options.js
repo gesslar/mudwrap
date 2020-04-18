@@ -4,21 +4,18 @@
 
 'use strict';
 
-const kButtonColors = ['#3aa757', '#e8453c', '#f9bb2d', '#4688f1'];
 const page = document.getElementById("buttonDiv");
 
-function constructOptions(kButtonColors) {
-  for (const item of kButtonColors) {
+( colors => {
+  colors.forEach( color => {
     const button = document.createElement('button');
-    button.style.backgroundColor = item;
+    button.style.backgroundColor = color;
     button.addEventListener('click', () => {
-      chrome.storage.sync.set({color: item}, () => {
-        console.log('color is ' + item);
+      chrome.storage.sync.set({color: color}, () => {
+        console.log('color is ' + color);
       })
     });
     
     page.appendChild(button);
-  }
-}
-
-constructOptions(kButtonColors);
+  })
+}) ( ['#3aa757', '#e8453c', '#f9bb2d', '#4688f1'] )
