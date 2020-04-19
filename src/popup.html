@@ -19,16 +19,31 @@
         <textarea class="textbox" name="inputArea" id="inputArea" cols="90" rows="10"></textarea>
       </div>
       <div class="buttonbar">
-        <button class="mdc-button" name="copy" id="copy">
-          <div class="mdc-button__ripple"></div>
-          <i class="material-icons mdc-button__icon">file_copy</i>
-          <span class="mdc-button__label">Copy</span> 
-        </button>
-        <button class="mdc-button" name="reset" id="reset">
-          <div class="mdc-button__ripple"></div>
-          <i class="material-icons mdc-button__icon">delete_outline</i>
-          <span class="mdc-button__label">Clear</span> 
-        </button>
+        <div>
+          <button class="mdc-button" name="copy" id="copy">
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon">file_copy</i>
+            <span class="mdc-button__label">Copy</span> 
+          </button>
+          <button class="mdc-button" name="reset" id="reset">
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon">delete_outline</i>
+            <span class="mdc-button__label">Clear</span> 
+          </button>  
+        </div>
+      </div>
+      <div class="options">
+        <i id="chevron" class="material-icons">chevron_right</i>
+        <span><a id="chevronLink" class="optionslink" href="#">Options</a></span>
+      </div>
+      <div class="options_panel" id="options_panel">
+        <section>
+          Wrap at <input type="number" name="wrap_at" id="wrap_at" min="10" max="79" value="79"> characters
+        </section>
+        <section>
+          Indent subsequent lines <input type="checkbox" name="indent_check" id="indent_check" value="true">
+          by <input type="number" name="indent_at" id="indent_at" min="3" max="10" value="5"> spaces
+        </section>
       </div>
     </section>
   </body>

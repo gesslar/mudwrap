@@ -1,6 +1,7 @@
 body {
     background-color: #2d2d2d;
     color: #f5f5dc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -43,3 +44,21 @@ header {
     display: none;
 }
 
+.options {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    text-align: left;
+}
+
+.options .optionslink {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+
+.options_panel {
+    padding: 10px 10px 10px 25px;
+    background-color: #3F3F3F;
+    margin: 0px;
+    color: #f5f5dc;
+}
