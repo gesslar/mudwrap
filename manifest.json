@@ -2,13 +2,13 @@
     "name": "MUDwrap",
     "version": "1.0.0",
     "description": "A text wrapping utility for MUD players.",
-    "permissions": ["storage", "declarativeContent", "activeTab"],
+    "permissions": [ "activeTab"],
     "options_page": "src/ui/options/options.html",
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
-    "page_action": {
+    "browser_action" : {
         "default_popup": "src/ui/popup/popup.html",
         "default_icon": {
             "16" : "src/images/get_started16.png",
@@ -24,4 +24,4 @@
         "128": "src/images/get_started128.png"
     },
     "manifest_version": 2
-  }
+}

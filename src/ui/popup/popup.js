@@ -1,20 +1,26 @@
-// Copyright 2018 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+"use strict"
+const console = chrome.extension.getBackgroundPage().console
 
-'use strict';
+console.log("popup.js loaded");
 
-let changeColor = document.getElementById('changeColor');
-chrome.storage.sync.get('color', function(data) {
-  changeColor.style.backgroundColor = data.color;
-  changeColor.setAttribute('value', data.color);
-});
+// init
+const submitButton = document.getElementById("submit")
+submitButton.addEventListener( "click", () => {
+  window.alert("hi there");
+  console.log("Submit clicked")
+})
 
-changeColor.onclick = function(element) {
-  let color = element.target.value;
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.executeScript(
-        tabs[0].id,
-        {code: 'document.body.style.backgroundColor = "' + color + '";'});
-  });
-};
+const clearButton = document.getElementById("clear")
+clearButton.addEventListener( "click", () => {
+  console.log("Clear clicked")
+})
+
+const copyButton = document.getElementById("copy")
+copyButton.addEventListener( "click", () => {
+  console.log("Copy clicked")
+})
+
+const resetButton = document.getElementById("clear")
+resetButton.addEventListener( "click", () => {
+  console.log("Reset clicked")
+})
