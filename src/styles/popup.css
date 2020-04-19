@@ -1,0 +1,45 @@
+body {
+    background-color: #2d2d2d;
+    color: #f5f5dc;
+}
+
+.header {
+    background-color: #5c5c5c;
+    margin: 0px;
+}
+
+.header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header img {
+    vertical-align: middle;
+}
+
+.instructions {
+    margin: 0px;
+}
+
+.buttonbar {
+    text-align: right;
+}
+
+button {
+    --mdc-theme-primary: #f5f5dc;
+}
+
+header {
+    --mdc-theme-primary: #f5f5dc;
+}
+
+.textbox {
+    border-color: #5c5c5c;
+    border-style: solid;
+    background-color: #f5f5dc;
+}
+
+.hidden {
+    display: none;
+}
+

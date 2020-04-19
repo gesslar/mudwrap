@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+    <script src = "https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js" defer></script>
+    <script src = "scripts/popup.js" defer></script>
+    <script src = "scripts/wrap.js" defer></script>
+  </head>
+  <body>
+    <section class="header">
+      <img src="images/CuneiformTablet.png" alt=""><h1>MUDwrap</h1>
+    </section>
+    <section class="instructions">
+      <div>
+        <h2>Type or paste the text you would like to wrap in the box below</h2>
+        <textarea class="textbox" name="inputArea" id="inputArea" cols="90" rows="10"></textarea>
+      </div>
+      <div class="buttonbar">
+        <button class="mdc-button" name="copy" id="copy">
+          <div class="mdc-button__ripple"></div>
+          <i class="material-icons mdc-button__icon">file_copy</i>
+          <span class="mdc-button__label">Copy</span> 
+        </button>
+        <button class="mdc-button" name="reset" id="reset">
+          <div class="mdc-button__ripple"></div>
+          <i class="material-icons mdc-button__icon">delete_outline</i>
+          <span class="mdc-button__label">Clear</span> 
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
