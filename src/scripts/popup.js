@@ -41,9 +41,9 @@ const updateOptions = () => {
   })
 }
 
-wrapAt.addEventListener( "change", e => updateOptions(e) )
-indentCheckbox.addEventListener( "change", e => updateOptions(e) )
-indentAt.addEventListener( "change", e => updateOptions(e) )
+wrapAt.addEventListener( "change", e => updateOptions )
+indentCheckbox.addEventListener( "change", e => updateOptions )
+indentAt.addEventListener( "change", e => updateOptions )
 
 const textAreaUpdated = (textBox, e) => {
   const results = doWrap(textBox.value)
